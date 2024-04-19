@@ -309,11 +309,6 @@
     <Resource Include="Resources\Icons\Alignment.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf">
-      <Version>1.1.31</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Strings\ResourceStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceStrings.Designer.cs</LastGenOutput>
@@ -325,6 +320,10 @@
       <Name>CivilSurveySuite.Common</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf">
+      <Version>1.1.39</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
